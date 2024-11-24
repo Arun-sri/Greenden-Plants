@@ -17,7 +17,7 @@
             <h1 class="font-semibold">
                 GREENDEN
             </h1>
-            <svg class="w-6  md:hidden lg:hidden  xl:hidden 2xl:hidden h-6" xmlns="http://www.w3.org/2000/svg"
+            <svg   id="hamburger" class="w-6  md:hidden lg:hidden  xl:hidden 2xl:hidden h-6" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20" fill="currentColor" class="size-5">
                 <path fill-rule="evenodd"
                     d="M2 3.75A.75.75 0 0 1 2.75 3h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75Zm0 4.167a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 4.166a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 4.167a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
@@ -31,14 +31,24 @@
             </ul>
         </nav>
 
+        <!-- Mobile Nav Section -->
+        <section id="mobile" class="bg-green-100  hidden fixed top-0 z-20" style="height: 100vh; width: 50%;">
+            <p id="close" class="s pr-6 pt-5 text-right"><span class=" border  border-green-50">X</span></p>
+            <ul class=" mt-5 pt-5 text-gray-500">
+                <li class="pl-4  mt-5 hover:underline cursor-pointer">Home</li>
+                <li class="pl-4  mt-5 hover:underline cursor-pointer"><a href="products.html">Products</a></li>
+                <li class="pl-4  mt-5 hover:underline cursor-pointer"><a href="contactus.html">Contact</a></li>
+            </ul>
+        </section>
+
  
         <!-- Best Seller -->
         <section class=" text-center">
             <div>
                 <h2 class="text-center font-bold text-3xl"> Our Products</h2>
 
-                <input style="width: 60%;" placeholder=" Search Products" class="border border-black mt-2 mb-2 pt-1 pb-1" type="text">
-                <div class="grid grid-cols-2 md:grid-cols-4 mt-4 gap-2 ">
+                <input id="search" style="width: 60%;" placeholder=" Search Products" class="border border-black mt-2 mb-2 pt-1 pb-1" type="text">
+                <div  id="products" class="grid grid-cols-2 md:grid-cols-4 mt-4 gap-2 ">
                     <div class="  ">
                         <img src="images/Rose.png" class="inline hover:shadow-2xl transform hover:-translate-y-2"
                             alt="Rose plant">
@@ -107,5 +117,7 @@
         </footer>
         </section>
     </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
